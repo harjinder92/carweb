@@ -1,0 +1,14 @@
+.footer{
+    background-color: gray;
+    
+}
+.footer ul{
+    display: inline-flex;
+}
+.footer ul li{
+    margin: 30px;
+    font-size: larger;
+}
+.footer ul li :hover{
+    background-color: antiquewhite;
+}

@@ -1,0 +1,44 @@
+.container{
+    background-color:white;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    float: center;
+    margin-left: 175px;
+    
+}
+.head1{
+  color: rgb(190, 190, 6);
+  font-size: 8rem;
+  font-family:'Great Vibes',cursive;
+  text-align: center;
+}
+
+.container h1{
+    color: blue;
+    font-size: 4rem;
+    font-display: bold;
+}
+.sec2{
+  text-align: center;
+}
+ h2{
+  color: aliceblue;
+  text-align: center;
+  font-family: "Instrument Serif";
+}
+h3{
+  color: aliceblue;
+  text-align: left;
+}
+ul{
+  color: aliceblue;
+  text-align: left;
+}
+p{
+  color: aliceblue;
+  text-align: left;
+}
+.footer{
+  text-align: center;
+}

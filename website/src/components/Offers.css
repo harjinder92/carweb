@@ -1,0 +1,68 @@
+
+
+.article {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.picture {
+    width: 100%;
+    height: 80%;
+}
+
+.header {
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: fit-content;
+}
+.jin{
+    display:inline-block;
+    height: 50%;
+    padding: 70px;
+    text-align: center;
+    margin-left: 70px;
+}
+.hed2{
+    text-align: left;
+}
+h2{
+   
+    text-align:center;
+}
+p{
+    color: blue;
+    margin: 0px;
+    text-indent: 3ch;
+    
+}
+p.pilcrow{
+    display:inline;
+}
+input{
+    font-size: larger;
+}
+button{
+    font-size:x-large;
+    background-color: blue;
+    color: white;
+}
+button :hover{
+    color:rgb(0, 140, 255);
+}
+button onClick{
+    color: red;
+}
+h3{
+    color: blue;
+    width:1000px;
+    text-align: center;
+    margin-left: 200px;
+}
