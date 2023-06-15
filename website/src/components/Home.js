@@ -1,17 +1,30 @@
+import './Stylesheet.css';
+import "aos/dist/aos.css";
+
 import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+import AOS from 'aos';
+import Footer from "./Footer";
 import ImageSlider from 'react-auto-image-slider'
 import {Slide} from 'react-auto-image-slider'
-import './Stylesheet.css';
-import AOS from 'aos';
-import "aos/dist/aos.css";
-import Footer from "./Footer";
+import { increment } from '../redux/counterSlice';
 
 function Home(){
+  const state = useSelector((state) => state);
+  const dispatch = useDispatch();
+console.log(state);
     useEffect(()=>{
         AOS.init();
     },[])
 return(
     <>
+      <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
+        >
+          Increment
+        </button>
     <ImageSlider effectDelay={200} autoPlayDelay={1000}>
     <Slide>
     <img src="https://media.product.which.co.uk/prod/images/original/gm-ecd5ebb4-cf37-4411-9901-57826ab1b28a-header-15.jpeg"/>

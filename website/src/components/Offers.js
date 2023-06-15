@@ -1,13 +1,17 @@
-import { useEffect, useState } from 'react';
 import './Offers.css';
-import Image2 from './image/Image2.png';
-import Image3 from './image/Image3.png';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+
 import Aos from "aos";
 import Footer from './Footer';
+import Image2 from './image/Image2.png';
+import Image3 from './image/Image3.png';
+import { increment } from '../redux/formSlice';
 import { useNavigate } from 'react-router-dom';
 
-
 function Offers(){
+    
     useEffect(()=>{
         Aos.init();
     },[]) 
@@ -31,10 +35,20 @@ function Offers(){
         }
         navigate("/");
     }
+    const state = useSelector((state) => state);
+    console.log(state);
+    const dispatch = useDispatch();
+
     return(
         <div className="article">
+             <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
+        >
+          Increment
+        </button>
        <img src="https://www.carcility.com/blog/wp-content/uploads/2020/06/steam-car-wash.jpg" className="picture"/>
-        <h1  className="header">Offers</h1>
+        <h1  className="header">Offers {state.counterReducer.value}</h1>
         
         <div className='hold'>
         <h1 style={{color:"white",textAlign:'center'}}>Specical Offers</h1>
